@@ -12,7 +12,7 @@ public class ModifiedPlaythrough : MonoBehaviour
     
     public ModifiedPlaythrough pt;
 
-    // Use this for initialization
+    // Use this for initializationee
     void Start()
     {
         Player[] allObjects = FindObjectsOfType<Player>();
