@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using UnityEngine.Networking;
+using Newtonsoft.Json;
 
 public class UpdateBtn : MonoBehaviour {
 
     public Button updateBtn;
+<<<<<<< HEAD
     public PlayThrough pt;
+=======
+    public Playthrough pt;
+    
+>>>>>>> Zimbe-patch-1
 
     // Use this for initialization
     void Start () {
@@ -40,20 +48,20 @@ public class UpdateBtn : MonoBehaviour {
 
         WWWForm form = new WWWForm();
 
-        WWW putRequest = new WWW("http://localhost:5000/api/Playthroughs", bodyRaw, headers);
+        WWW postRequest = new WWW("http://localhost:5000/api/Playthroughs", bodyRaw, headers);
 
-        yield return putRequest;
+        yield return postRequest;
 
-        if (string.IsNullOrEmpty(putRequest.error))
+        if (string.IsNullOrEmpty(postRequest.error))
         {
-            Debug.Log("upload complete");
-            print("Upload complete!");
+            Debug.Log("NewGame complete");
+            print("NewGame complete!");
         }
         else
         {
-            print(putRequest.error);
+            print(postRequest.error);
         }
 
-        Debug.Log("update clicked");
+        Debug.Log("NewGame clicked");
     }
 }

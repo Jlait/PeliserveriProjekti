@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class Player : MonoBehaviour {
+public class Player {
 
     public Guid id;
     public String Name;
