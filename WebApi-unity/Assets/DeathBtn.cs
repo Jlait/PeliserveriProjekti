@@ -12,7 +12,7 @@ public class DeathBtn : MonoBehaviour {
     // Use this for initialization
     void Start () {
         deathBtn = deathBtn.GetComponent<Button>();
-        player = player.GetComponent<Player>();
+        //player = player.GetComponent<Player>();
 
         deathBtn.onClick.AddListener(DeathOnClick);
     }

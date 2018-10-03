@@ -13,7 +13,7 @@ public class KillBtn : MonoBehaviour {
 
 	void Start () {
         killBtn = killBtn.GetComponent<Button>();
-        player = player.GetComponent<Player>();
+        //player = player.GetComponent<Player>();
 
         //Calls the TaskOnClick/TaskWithParameters method when you click the Button
         killBtn.onClick.AddListener(KillOnClick); 
