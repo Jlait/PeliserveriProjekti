@@ -58,9 +58,10 @@ public class PlayThroughController : MonoBehaviour {
 		UpdateTexts();
 	}
 }
-
+/*
 [Serializable]
 public class PlayThrough{
 	public Guid guid;
 	public List<Player> playerList = new List<Player>();
 }
+*/

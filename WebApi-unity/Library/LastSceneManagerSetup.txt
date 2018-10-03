@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: "Assets/sk\xF6n\xF6.unity"
+  isLoaded: 1
+  isActive: 1

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class UpdateBtn : MonoBehaviour {
 
     public Button updateBtn;
-    public ModifiedPlaythrough pt;
+    public PlayThrough pt;
 
     // Use this for initialization
     void Start () {
